@@ -43,35 +43,14 @@ CHAVE SSH , uma forma de estabelecer conexão segura e encriptada entre duas maq
 
 GERAR PAR DE CHAVE para cadastrar no GitHub
 
-supportsi@ssi000:~/workspace$ ssh-keygen -t ed25519 -C capego@hotmail.com
-==========================================================
-Generating public/private ed25519 key pair.
-Enter file in which to save the key (/home/supportsi/.ssh/id_ed25519): 
-Enter passphrase (empty for no passphrase):  a mesma do NoteBook
-Enter same passphrase again: 
-Your identifin hascatio been saved in /home/supportsi/.ssh/id_ed25519
-Your public key has been saved in /home/supportsi/.ssh/id_ed25519.pub
-The key fingerprint is:
 
-acessa a pasta /home...  
-========================
-supportsi@ssi000:~/workspace$ cd /home/supportsi/.ssh
-supportsi@ssi000:~/.ssh$ ls -l
-total 12
--rw------- 1 supportsi supportsi 464 dez 22 15:38 id_ed25519
--rw-r--r-- 1 supportsi supportsi 100 dez 22 15:38 id_ed25519.pub
--rw-r--r-- 1 supportsi supportsi 222 dez 20 10:03 known_hosts
-supportsi@ssi000:~/.ssh$ cat id_ed25519.pub
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJW5fYDxUTS2EP3JNP/iClu3XwAK2qPGOXXMwgz1+xJA capego@hotmail.com
-
-copia a chave e entra no GitHub e cola em setings/chaves ssh
 
 ==========================================================
 
 ANTES DE INICIAR O USO DO GIT DEVEMOS ATRIBUIR O USUARIO E EMAIL DE FORMA GLOBAL PARA QUE O GIT FAÇA SEMPRE A IDENTIFICAÇÃO DOS COMMITS
 
 $ git config --global user.email "capego@hotmail.com"
-$ git config --global user.name Capego
+$ git config --global user.name "capego69"
 
 ==========================================================
 
